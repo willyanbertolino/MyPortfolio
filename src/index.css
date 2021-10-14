@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* 
+++++++++++++++++
+Fonts
+++++++++++++++++
+*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&family=Roboto&display=swap');
+
+/* 
+++++++++++++++++
+Variables
+++++++++++++++++
+*/
+:root {
+  --clr-primary-1: #55f;
+  --clr-primary-2: rgb(96, 96, 139);
+  --clr-primary-3: rgb(185, 185, 250);
+  --clr-primary-4: rgb(220, 220, 250);
+  --clr-secondary-1: #106b2e;
+  --clr-secondary-2: #99ebb4;
+  --clr-secondary-3: #ff3953;
+  --clr-secondary-4: #ff7789;
+  --clr-grey-1: #333;
+  --clr-grey-2: #777;
+  --clr-grey-3: #999;
+  --clr-grey-4: #bbb;
+  --clr-grey-5: #ccc;
+  --clr-bcg: #0e0f0f;
+  --ff-primary: 'Roboto';
+  --ff-secondary: 'Caveat';
+
+  --transition: all 0.3s linear;
+  --radius: 0.5rem;
+  --spacing: 0.2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 
+++++++++++++++++
+Default
+++++++++++++++++
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--clr-bcg);
+  font-family: var(--ff-primary);
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+@keyframes breath-animation {
+  30% {
+    transform: rotate(60deg);
+    width: 50px;
+  }
+  40% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
