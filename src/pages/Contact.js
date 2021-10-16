@@ -36,7 +36,11 @@ const Contact = () => {
           <div className="icon">
             <FaLinkedin />
           </div>
-          <a href="https://www.linkedin.com/in/willyanhpbertolino/">
+          <a
+            href="https://www.linkedin.com/in/willyanhpbertolino/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             linkedin.com/in/willyanhpbertolino
           </a>
         </div>
@@ -44,8 +48,12 @@ const Contact = () => {
           <div className="icon">
             <FiMail />
           </div>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=willyanbertolino@gmail.com">
-            willyanbertolino@gmail.com
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=willyanhpbertolino@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            willyanhpbertolino@gmail.com
           </a>
         </div>
       </div>
@@ -57,6 +65,7 @@ const Wrapper = styled.section`
   height: 70vh;
   display: grid;
   place-items: center;
+  padding-top: 12rem;
 
   .social {
     position: relative;
@@ -120,14 +129,14 @@ const Wrapper = styled.section`
   .social:hover .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .social:hover a {
     justify-self: left;
     padding-left: 1rem;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0.1rem;
     color: var(--clr-primary-2);
   }
@@ -153,6 +162,16 @@ const Wrapper = styled.section`
     left: 0;
     width: 100%;
     height: 25%;
+  }
+
+  @media screen and (min-width: 600px) {
+    .social:hover .container {
+      font-size: 1.8rem;
+    }
+
+    .social:hover a {
+      font-size: 1rem;
+    }
   }
 `;
 

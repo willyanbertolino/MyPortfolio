@@ -3,7 +3,7 @@
 Fonts
 ++++++++++++++++
 */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&family=Roboto&display=swap=Fira+Code&display=swap');
 
 /* 
 ++++++++++++++++
@@ -27,7 +27,7 @@ Variables
   --clr-bcg: #0e0f0f;
   --ff-primary: 'Roboto';
   --ff-secondary: 'Caveat';
-
+  --ff-code: 'Fira Code';
   --transition: all 0.3s linear;
   --radius: 0.5rem;
   --spacing: 0.2rem;
@@ -54,6 +54,10 @@ ul {
 }
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
 
 @keyframes breath-animation {
