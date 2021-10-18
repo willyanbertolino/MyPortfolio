@@ -6,11 +6,11 @@ const About = () => {
   return (
     <Wrapper>
       <div className="container">
-        {about.map((item) => {
+        {about.map((item, index) => {
           const { name, icon, text } = item;
 
           return (
-            <article className={name}>
+            <article key={index} className={name}>
               <div className="icon">{icon}</div>
               <div className="text">
                 <h3>{name}</h3>
@@ -23,6 +23,12 @@ const About = () => {
     </Wrapper>
   );
 };
+
+// style={
+//                   text.length > 70
+//                     ? { textAlign: 'justify' }
+//                     : { textAlign: 'left' }
+//                 }
 
 const Wrapper = styled.section`
   width: 90vw;
@@ -51,6 +57,8 @@ const Wrapper = styled.section`
 
   .text {
     padding-right: 1rem;
+    text-align: justify;
+    width: 100%;
   }
 
   .text h3 {
@@ -66,13 +74,11 @@ const Wrapper = styled.section`
     line-height: 1.2rem;
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
-    text-align: justify;
   }
 
   @media screen and (min-width: 600px) {
     .icon {
       font-size: 2rem;
-
       padding-right: 3rem;
     }
 

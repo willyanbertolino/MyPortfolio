@@ -156,7 +156,7 @@ const Wrapper = styled.section`
     top: 50%;
     visibility: visible;
     background: var(--clr-grey-1);
-    opacity: 0.85;
+    opacity: 0.93;
     z-index: 1;
   }
 

@@ -56,6 +56,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: var(--clr-primary-2);
+}
+
 img {
   display: block;
 }

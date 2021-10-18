@@ -34,7 +34,11 @@ const Navbar = () => {
           className="nav-toggle"
           onClick={() => setSidebar(!sidebar)}
         >
-          <div className="btn-toggle"></div>
+          <span className="btn-toggle-1"></span>
+          <span className="btn-toggle btn-toggle-2"></span>
+          <span className="btn-toggle btn-toggle-4"></span>
+          <span className="btn-toggle-3"></span>
+          {/* <div className="btn-toggle"></div> */}
         </button>
       </div>
 
@@ -74,7 +78,7 @@ const NavContainer = styled.nav`
 
   .aside-container {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 100%;
     top: 0;
     width: 100%;
@@ -135,6 +139,7 @@ const NavContainer = styled.nav`
   }
 
   .nav-toggle {
+    position: relative;
     width: 3rem;
     height: 3rem;
     border: transparent;
@@ -145,37 +150,43 @@ const NavContainer = styled.nav`
   }
 
   .btn-toggle {
-    width: 2.2rem;
-    height: 2.2rem;
-    border: 2px solid var(--clr-secondary-2);
-    position: relative;
-    animation: toggle 6s linear infinite;
-    animation-delay: 2s;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--clr-primary-1);
+    animation: toggle-animation 4s linear infinite;
+    animation-delay: 1s;
   }
 
-  .btn-toggle::before {
-    content: '';
+  .btn-toggle-1 {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 1rem;
     height: 1rem;
     transform: translate(-50%, -50%);
-    border: 2px solid var(--clr-secondary-2);
-    animation: toggle 6s linear infinite;
+    border: 2px solid var(--clr-primary-1);
+    animation: toggle-animation 4s linear infinite;
   }
 
-  .btn-toggle::after {
-    content: '';
+  .btn-toggle-2 {
+    animation-delay: 1s;
+  }
+
+  .btn-toggle-4 {
+    animation-delay: 3s;
+  }
+
+  .btn-toggle-3 {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 3rem;
     height: 3rem;
     transform: translate(-50%, -50%);
-    border: 3px solid var(--clr-secondary-2);
-    animation: toggle 6s linear infinite;
-    animation-delay: 4s;
+    border: 2px solid var(--clr-primary-1);
+    animation: toggle-animation 4s linear infinite;
+    animation-delay: 2s;
   }
 
   .page-text {
@@ -224,15 +235,17 @@ const NavContainer = styled.nav`
     }
   }
 
-  @keyframes toggle {
-    0% {
-      opacity: 0;
-    }
+  @keyframes toggle-animation {
+    0%,
     25% {
       opacity: 1;
     }
-    100% {
+    37.5%,
+    87.5% {
       opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 `;

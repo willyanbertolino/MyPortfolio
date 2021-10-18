@@ -1,7 +1,8 @@
 import { FaHtml5 } from 'react-icons/fa';
 import { SiJavascript, SiCss3 } from 'react-icons/si';
-import elephant from '../assets/elephant.jpeg';
-import nature from '../assets/nature.jpeg';
+import memory from '../assets/memory.JPG';
+import lambdabar from '../assets/lambdabar.JPG';
+import burgerset from '../assets/burgerset.JPG';
 
 const html5 = <FaHtml5 style={{ color: '#f06529', background: '#ebebeb' }} />;
 const css3 = (
@@ -23,18 +24,26 @@ const js = (
 export const projects = [
   {
     id: 1,
-    img: elephant,
-    title: 'project1',
-    link: 'https://',
-    github: 'https://',
-    tec: [html5, css3],
+    img: memory,
+    title: 'Matching Cards',
+    link: 'https://cards-matching-game-willyan-bertolino.netlify.app/',
+    github: 'https://github.com/willyanbertolino/card-matching-game',
+    tec: [html5, css3, js],
   },
   {
     id: 2,
-    img: nature,
-    title: 'project2',
-    link: 'https://',
-    github: 'https://',
-    tec: [html5, css3, js],
+    img: lambdabar,
+    title: 'Lambda Bar',
+    link: 'https://lambda-bar-willyan-bertolino.netlify.app',
+    github: 'https://github.com/willyanbertolino/Lambda-Bar',
+    tec: [html5, css3],
+  },
+  {
+    id: 3,
+    img: burgerset,
+    title: 'Burger Set',
+    link: 'https://burgerset.netlify.app/',
+    github: 'https://github.com/willyanbertolino/Burgerset',
+    tec: [html5, css3],
   },
 ];
