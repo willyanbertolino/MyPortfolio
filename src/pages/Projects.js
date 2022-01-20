@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { usePortifolioContext } from '../context';
 import { FiExternalLink } from 'react-icons/fi';

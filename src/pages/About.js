@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { about } from '../data/about';
 
@@ -14,7 +13,18 @@ const About = () => {
               <div className="icon">{icon}</div>
               <div className="text">
                 <h3>{name}</h3>
-                <p>{text}</p>
+                <ul>
+                  {text.map((textItem, i) => (
+                    <li
+                      key={i}
+                      className={
+                        text.length > 1 ? 'text-list style-type' : 'text-list'
+                      }
+                    >
+                      {textItem}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </article>
           );
@@ -24,17 +34,11 @@ const About = () => {
   );
 };
 
-// style={
-//                   text.length > 70
-//                     ? { textAlign: 'justify' }
-//                     : { textAlign: 'left' }
-//                 }
-
 const Wrapper = styled.section`
   width: 90vw;
   max-width: 700px;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding-top: 8rem;
 
   article {
     display: flex;
@@ -69,11 +73,15 @@ const Wrapper = styled.section`
     color: var(--clr-primary-1);
   }
 
-  .text p {
+  .text-list {
     color: var(--clr-primary-2);
     line-height: 1.2rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
+  }
+
+  .style-type {
+    list-style-type: square;
   }
 
   @media screen and (min-width: 600px) {
