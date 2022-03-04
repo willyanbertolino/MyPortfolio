@@ -19,6 +19,7 @@ export const about = [
     name: 'education',
     icon: <FaUserGraduate />,
     text: [
+      'Internet Systems Technology – Unicesumar (graduation): 2022 – present',
       "NodeJS Tutorial and Projects Course by John Smilga's Udemy course: (31.5h) january 2022",
       "React Tutorial and Projects Course by John Smilga's Udemy course: (48.5h) january 2022",
       "JavaScript Tutorial and Projects Course by John Smilga's Udemy course: (40h) january 2022",
@@ -55,7 +56,7 @@ export const about = [
     name: 'experience',
     icon: <FaUserTie />,
     text: [
-      `I don't have professional experience as a Web Developer, yet, but I'm very excited to.`,
+      `I don't have experience at companies as a Web Developer, yet, but I'm very excited to.`,
     ],
   },
   {
