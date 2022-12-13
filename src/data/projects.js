@@ -3,6 +3,7 @@ import { SiJavascript, SiCss3 } from 'react-icons/si';
 import memory from '../assets/memory.JPG';
 import lambdabar from '../assets/lambdabar.JPG';
 import burgerset from '../assets/burgerset.JPG';
+import protocolsAPI from '../assets/protocolsAPI.JPG';
 
 const html5 = <FaHtml5 style={{ color: '#f06529', background: '#ebebeb' }} />;
 const css3 = (
@@ -45,5 +46,13 @@ export const projects = [
     link: 'https://burgerset.netlify.app/',
     github: 'https://github.com/willyanbertolino/Burgerset',
     tec: [html5, css3],
+  },
+  {
+    id: 3,
+    img: protocolsAPI,
+    title: 'Protocols API',
+    link: 'https://simplereactapp.willyanhpbertolino.app.br/',
+    github: 'https://github.com/willyanbertolino/React-app-for-Simple-CRUD-api',
+    tec: ['React', 'Mongo', 'Express', 'Node'],
   },
 ];
