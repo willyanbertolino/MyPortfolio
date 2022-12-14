@@ -1,26 +1,25 @@
-import { FaHtml5 } from 'react-icons/fa';
-import { SiJavascript, SiCss3 } from 'react-icons/si';
+import { FaHtml5, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiJavascript, SiCss3, SiMongodb, SiExpress } from 'react-icons/si';
 import memory from '../assets/memory.JPG';
 import lambdabar from '../assets/lambdabar.JPG';
 import burgerset from '../assets/burgerset.JPG';
 import protocolsAPI from '../assets/protocolsAPI.JPG';
 
-const html5 = <FaHtml5 style={{ color: '#f06529', background: '#ebebeb' }} />;
-const css3 = (
-  <SiCss3
-    style={{ color: '#2965f1', background: '#ebebeb', padding: '0.1rem' }}
-  />
-);
+const html5 = <FaHtml5 style={{ color: '#f06529' }} />;
+const css3 = <SiCss3 style={{ color: '#2965f1', padding: '0.1rem' }} />;
 
 const js = (
   <SiJavascript
     style={{
       color: '#f0db4f',
-      background: '#323330',
-      border: '2px solid #ebebeb',
     }}
   />
 );
+
+const react = <FaReact className="icon react" />;
+const mongo = <SiMongodb className="icon mongo" />;
+const node = <FaNodeJs className="icon node" />;
+const express = <SiExpress className="icon express" />;
 
 export const projects = [
   {
@@ -53,6 +52,6 @@ export const projects = [
     title: 'Protocols API',
     link: 'https://simplereactapp.willyanhpbertolino.app.br/',
     github: 'https://github.com/willyanbertolino/React-app-for-Simple-CRUD-api',
-    tec: ['React', 'Mongo', 'Express', 'Node'],
+    tec: [react, mongo, express, node],
   },
 ];

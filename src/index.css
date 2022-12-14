@@ -33,6 +33,19 @@ Variables
   --spacing: 0.2rem;
 }
 
+.mongo {
+  color: #4db33d;
+}
+.express {
+  color: #ff3953;
+}
+.react {
+  color: #61dbfb;
+}
+.node {
+  color: #3c873a;
+}
+
 /* 
 ++++++++++++++++
 Default

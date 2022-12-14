@@ -64,6 +64,8 @@ export const about = [
   {
     name: 'address',
     icon: <FaHouseUser />,
-    text: [`I live in the countryside, next to Apucarana, Paraná, Brazil.`],
+    text: [
+      `R. Doutor Oswaldo A. Palhares, 300, frente. Londrina - Paraná - Brasil. CEP: 86063-040`,
+    ],
   },
 ];

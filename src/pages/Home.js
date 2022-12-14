@@ -177,19 +177,6 @@ const Wrapper = styled.section`
     visibility: visible;
   }
 
-  .mongo {
-    color: #4db33d;
-  }
-  .express {
-    color: #ff3953;
-  }
-  .react {
-    color: #61dbfb;
-  }
-  .node {
-    color: #3c873a;
-  }
-
   @media screen and (min-width: 600px) {
     .title h1 {
       font-size: 6.5rem;
