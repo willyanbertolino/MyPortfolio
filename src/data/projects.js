@@ -50,7 +50,7 @@ export const projects = [
     id: 3,
     img: protocolsAPI,
     title: 'Protocols API',
-    link: 'https://simplereactapp.willyanhpbertolino.app.br/',
+    link: 'https://protocols.willyanhpbertolino.app.br',
     github: 'https://github.com/willyanbertolino/React-app-for-Simple-CRUD-api',
     tec: [react, mongo, express, node],
   },
